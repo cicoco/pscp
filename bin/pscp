@@ -1,0 +1,22 @@
+#!/usr/bin/expect
+#!/usr/bin/env node
+set timeout 100
+set host [lindex $argv 0]
+set username [lindex $argv 1]
+set password [lindex $argv 2]
+set source [lindex $argv 3]
+set destination [lindex $argv 4]
+
+spawn scp -r $source $username@$host:$destination
+ expect {
+ "(yes/no)?"
+  {
+  send "yes\n"
+  expect "*assword:" { send "$password\n"}
+ }
+ "*assword:"
+{
+ send "$password\n"
+}
+}
+interact
