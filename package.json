@@ -1,8 +1,8 @@
 {
   "name": "pscp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "scp with params",
-  "main": "index.js",
+  "main": "lib/pscp.js",
   "bin": "bin/pscp",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/cicoco/pscp/issues"
   },
-  "homepage": "https://github.com/cicoco/pscp#readme"
+  "homepage": "https://github.com/cicoco/pscp#readme",
+  "dependencies": {
+    "scp-deploy": "^1.0.17"
+  }
 }
