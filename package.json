@@ -1,6 +1,6 @@
 {
   "name": "pscp",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "scp with params",
   "main": "lib/pscp.js",
   "bin": "bin/pscp",
@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/cicoco/pscp#readme",
   "dependencies": {
-    "scp-deploy": "^1.0.17"
+    "scp-deploy": "1.0.17"
   }
 }
